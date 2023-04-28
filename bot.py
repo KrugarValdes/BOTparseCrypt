@@ -2,11 +2,8 @@ from aiogram import Bot, Dispatcher, executor, types
 from config import TOKEN
 import parse
 import time
-import logging
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
-class Form(StatesGroup):
-    peremennaya = State()
 def start():
     bot = Bot(token=TOKEN)
     dp = Dispatcher(bot, storage=MemoryStorage())
