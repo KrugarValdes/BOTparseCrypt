@@ -1,8 +1,5 @@
 from bs4 import BeautifulSoup # импортируем библиотеку BeautifulSoup
 import requests # импортируем библиотеку
-import time
-import re
-import statistics
 def currency():
     url = 'https://coinmarketcap.com'
     page = requests.get(url)
