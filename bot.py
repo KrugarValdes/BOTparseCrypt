@@ -48,9 +48,9 @@ def start():
                 print(parse.limitcheck(spisok2[2]))
                 time.sleep(2)
             if (parse.limitcheck(spisok2[2]) < float(spisok2[1])):
-                await message.reply('Курс доллара вышел за нижний предел!')
+                await message.reply('Курс криптовалюты вышел за нижний предел!')
             else:
-                await message.reply('Курс доллара вышел за верхний предел!')
+                await message.reply('Курс криптовалюты вышел за верхний предел!')
 
     if __name__ == "bot":
         executor.start_polling(dp, skip_updates=True)
